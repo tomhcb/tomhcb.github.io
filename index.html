@@ -4,6 +4,35 @@
         <h1> TOM BRENTNALL. </h1>
   
         <p> I am attending the API workshop in BoE 14/03/2024! </p>
+   {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ 
+  "title": {"text": "GDP Per Capita"},
+ 
+  "width": 400,
+  "height": 300,
    
+  "data": {
+    "values": [
+        {"Country": "DR Congo.","GDP per capita": 1337},
+        {"Country": "UK","GDP per capita": 54929},
+        {"Country": "London","GDP per capita": 59855},
+        {"Country": "Scotland","GDP per capita": 34457},
+        {"Country": "China","GDP per capita": 21482},
+        {"Country": "USA","GDP per capita": 76329}]
+  },
+ 
+  "mark": {
+    "type": "bar",
+    "color": "red"},
+ 
+  "encoding": {
+    "x": {"field": "Country"},  
+ 
+    "y": {
+      "field": "GDP per capita",
+      "type": "quantitative"}}
+}
+ 
     </body>
 </html>
